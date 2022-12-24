@@ -1,0 +1,62 @@
+.profile-card {
+  width: 450px;
+  margin: 3rem auto 3rem auto;
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 8px 6px 1.1rem 2px rgba(0, 0, 0, 0.516);
+}
+
+.profile-card-close-button {
+  position: absolute;
+  height: 1.4rem;
+  top: 1rem;
+  right: 1.2rem;
+  transition: 0.2s scale 0.1s ease-out;
+}
+
+.profile-card-close-button:hover {
+  scale: 1.1;
+}
+
+.profile-card-pic {
+  height: 150px;
+  border-radius: 50%;
+  background-color: #999;
+  width: 150px;
+}
+
+.profile-card-about {
+  width: 80%;
+  margin: 5px;
+  text-align: center;
+}
+
+.profile-card-about h3 {
+  overflow-y: hidden;
+  margin-bottom: 0;
+}
+
+.profile-card-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-card-button button {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 540px) {
+  .profile-card {
+    width: 300px;
+  }
+  .profile-card-button {
+    flex-direction: column;
+  }
+}

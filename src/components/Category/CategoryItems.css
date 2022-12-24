@@ -1,0 +1,17 @@
+.line{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.line p{
+    font-weight: 600;
+    margin: 2px;
+}
+
+.card img{
+    max-height: 185px;
+}
+
+.card{
+    text-align: center;
+}

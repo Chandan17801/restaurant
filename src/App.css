@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.app {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.intro-pic-container {
+  margin-top: 0;
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-size: 100vw 40rem;
+  background-position: bottom;
+  width: 100vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-pic-container h1 {
+  font-size: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.intro-pic-container p {
+  font-size: 2rem;
+}
+
+.bg h1 {
+  font-size: 4.5rem;
+}
+
+.bg p {
+  font-size: 2rem;
+}
+
+.bg {
+  font-family: "tangerine";
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .intro-pic-container {
+    background-size: 100vw 30rem;
+    height: 27rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 600px) {
+  .intro-pic-container {
+    background-size: 100vw 20rem;
+    height: 20rem;
+  }
+  .bg {
+    transform: translate(-50%, -130%);
+  }
+  .bg h1 {
+    font-size: 4rem;
+  }
+  .bg p {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 540px) {
+  .bg h1 {
+    font-size: 3.5rem;
+  }
+  .bg p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .intro-pic-container {
+    height: 15rem;
+    background-size: 100% 15rem;
+  }
+  .bg{
+    transform: translate(-50%,-170%);
+  }
+  .bg h1 {
+    font-size: 2.85rem;
+  }
+  .bg p {
+    font-size: 1.2rem;
   }
 }
